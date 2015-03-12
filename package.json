@@ -1,6 +1,6 @@
 {
   "name": "x-result-count",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Parse and generate x-result-count",
   "main": "index.js",
   "scripts": {
