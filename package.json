@@ -8,6 +8,9 @@
     "test": "lab -c -t 99",
     "posttest": "npm run lint"
   },
+  "engines": {
+    "node": ">=4.0.0"
+  },
   "author": "Timo Behrmann",
   "license": "MIT",
   "devDependencies": {
