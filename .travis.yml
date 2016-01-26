@@ -1,6 +1,7 @@
 language: node_js
 sudo: false
 script:
+  - "make standard"
   - "make test-cov"
 matrix:
   include:

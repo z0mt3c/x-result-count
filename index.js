@@ -1,7 +1,7 @@
 'use strict'
 
-const parser = module.exports = {
-  parse(value) {
+module.exports = {
+  parse (value) {
     if (typeof value === 'string') {
       const indexOfMinus = value.indexOf('-')
       const indexOfSlash = value.indexOf('/', indexOfMinus)
@@ -16,7 +16,7 @@ const parser = module.exports = {
 
     return null
   },
-  generate(data) {
+  generate (data) {
     if (data && data.skip >= 0 && data.count >= 0 && data.total >= 0) {
       const from = data.skip
       const to = from + data.count
