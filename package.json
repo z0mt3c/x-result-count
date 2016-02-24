@@ -22,7 +22,7 @@
     "test": "test"
   },
   "dependencies": {
-    "lab": "^9.0.0",
+    "lab": "^10.0.0",
     "code": "^2.1.0"
   },
   "repository": {
