@@ -5,7 +5,7 @@ const Lab = require('lab')
 let lab = exports.lab = Lab.script()
 const xResultCount = require('../')
 
-lab.test('breakthrough', done => {
+lab.test('breakthrough', (done) => {
   const source = {skip: 100, count: 50, total: 999}
   const generated = xResultCount.generate(source)
   Code.expect(generated).to.equal('100-150/999')
@@ -14,7 +14,7 @@ lab.test('breakthrough', done => {
   done()
 })
 
-lab.test('parse', done => {
+lab.test('parse', (done) => {
   Code.expect(xResultCount.parse('100-150/999')).to.exist()
   Code.expect(xResultCount.parse('100-150999')).to.not.exist()
   Code.expect(xResultCount.parse('100150/999')).to.not.exist()
@@ -24,7 +24,7 @@ lab.test('parse', done => {
   done()
 })
 
-lab.test('generate', done => {
+lab.test('generate', (done) => {
   Code.expect(xResultCount.generate({skip: 100, count: 50, total: 999})).to.exist()
   Code.expect(xResultCount.generate({count: 50, total: 999})).to.not.exist()
   Code.expect(xResultCount.generate({skip: 100, total: 999})).to.not.exist()
