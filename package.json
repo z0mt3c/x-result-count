@@ -23,7 +23,7 @@
   },
   "dependencies": {
     "lab": "^10.1.0",
-    "code": "^2.1.0"
+    "code": "^4.0.0"
   },
   "repository": {
     "type": "git",
