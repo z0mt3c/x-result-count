@@ -10,7 +10,7 @@ module.exports = {
         const skip = parseInt(value.substring(0, indexOfMinus), 10)
         const stop = parseInt(value.substring(indexOfMinus + 1, indexOfSlash), 10)
         const total = parseInt(value.substr(indexOfSlash + 1), 10)
-        return {skip: skip, count: stop - skip, total: total}
+        return { skip: skip, count: stop - skip, total: total }
       }
     }
 
